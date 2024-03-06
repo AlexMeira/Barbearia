@@ -77,6 +77,9 @@ header nav ul li a{
     text-align: center;
     width: 50%;
 }
+.sobre .img-sobre img{
+    width: 550px;
+}
 
 .sobre .texto-sobre {
     font-size: 40px;
@@ -85,6 +88,7 @@ header nav ul li a{
     height: 60vh;
     padding: 50px;
     background-image: url(assets/background1.png);
+    background-position: center;
     border-radius: 20px;
 }
 
@@ -191,5 +195,97 @@ header nav ul li a{
     }
     100% { 
         top: 30px
+    }
+}
+
+@media screen and (max-width: 1067px){
+    .sobre .img-sobre img {
+        width: 400px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .horario{
+        background-position: center;
+    }
+    
+    .horario h3 {
+        font-size: 30px;
+    }
+    .container .horario p{
+        font-size: 20px;
+    }
+    .precos{
+        background-position: center;
+    }
+    .precos h3{
+        font-size: 30px;
+    }
+    .container .precos p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .texto-cabecalho{
+        display: none;
+    }
+    .sobre {
+        display: block;
+    }
+
+    .sobre .texto-sobre{
+        display: flex;
+        background-image: none;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around
+    }
+    .sobre .texto-sobre h1{
+        font-size: 35px;
+        width: 150%;
+        text-align: center;
+    }
+    .sobre .texto-sobre p{
+        font-size: 30px;
+        width: 150%;
+
+    }
+    .sobre .img-sobre img{
+        width: 200%;
+        align-items: center;
+    }
+    .interface {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interface h3{
+        font-size: 35px;
+    }
+    .interface p{
+        font-size: 30px;
+    }
+    .interface button {
+        font-size: 20px;
+    }
+    .redes-sociais {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .logo-ltda .texto-logo h4{
+        font-size: 20px;
     }
 }
